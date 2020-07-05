@@ -10,6 +10,8 @@ Some results:
 ![](data/img/results.png)
 
 ![](data/img/result2.png)
+
+
 ##1. Data
 **LGG Segmentation Dataset**
 
