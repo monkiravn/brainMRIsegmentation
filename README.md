@@ -1,4 +1,4 @@
-#Brain MRI Segmentation
+# Brain MRI Segmentation
 
 This is my first project about segmentation. The gobal of thís  project is 
 segmenting tumors on Brain image. Currently, it achieves 0.86 IoU. 
@@ -25,15 +25,15 @@ Some results:
 
 ![](data/img/DataVisualization2.png)
 
-##2. Preprocessing.
+## 2. Preprocessing.
 - Keep brain images is RGB because I think with 3 channels R-G-B, information about tumors is different from the rest. About mask images is gray.
 - Bring image's pixel to between 0 and 1 and mask's pixel are 0 or 1 (0 when pixel / 255 < 0.5, 1 when pixel / 255 >= 0.5).
 - Split data into 3 part: Train, Validation and Test:
     + Train: 2828 images, masks (71.98%)
     + Validation: 708 images, masks (18.02%)
     + Test: 393 images, masks (10%)
-##3. Model, loss function, optimizer and metric
-###3.1 Model Architecture
+## 3. Model, loss function, optimizer and metric
+### 3.1 Model Architecture
 
 ![Unet](data/img/unet.png)
 
@@ -42,19 +42,19 @@ Some results:
 - Conv is a convolutional layer (convolution kernel is 3 × 3 and padding is 1).
 - Use batch normalization between convolutional layer and Activation function is ReLU.
 - Upsample is the transposed convolution.
-###3.2 Loss function
+### 3.2 Loss function
 
 ![loss](data/img/loss.png)
 
 **[Dice coefficient loss function](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)**
 
-###3.3 Optimizer
+### 3.3 Optimizer
 
 ![Adam](data/img/Adam.png)
 
 **Use [Adam](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Adam) with learning rate is 1e-4**
 
-###3.4 Metrics
+### 3.4 Metrics
 
 ![metric](data/img/iou.png) 
 ![](data/img/dice.png)
@@ -63,7 +63,7 @@ Some results:
 
 **- [Dice Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)**
 
-##4. Result
+## 4. Result
 
 - The training process in Kaggle with 150 epochs,results are decribed below: 
 
@@ -93,7 +93,7 @@ Loss | Accuracy | IOU | Dice_coeff
 
 ![pred1](data/img/pred7.png)
 
-##5. Refercence
+## 5. Refercence
 
 In the process of implementing the project, from sketching ideas to completing models, I have consulted a number of resources including scientific articles, github, .... Here are some examples that i think they have important role in the implementation of this topic:
 
