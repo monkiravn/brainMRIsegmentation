@@ -1,4 +1,4 @@
-#**Brain MRI Segmentation**
+#Brain MRI Segmentation
 
 This is my first project about segmentation. The gobal of thís  project is 
 segmenting tumors on Brain image. Currently, it achieves 0.86 IoU. 
