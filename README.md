@@ -43,7 +43,6 @@ Some results:
 - Input shape: (256,256,3)
 - Output shape: (256,256,1)
 - Conv is a convolutional layer (convolution kernel is 3 × 3 and padding is 1).
-- Use batch normalization between convolutional layer and Activation function is ReLU.
 - Upsample is the transposed convolution.
 ### 3.2 Loss function
 
