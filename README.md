@@ -1,6 +1,6 @@
 # Brain MRI Segmentation
 
-This is my first project about segmentation. The gobal of thís  project is 
+This is my first project about segmentation. The gobal of this  project is 
 segmenting tumors on Brain image. Currently, it achieves 0.86 IoU. 
 
 The architecture is inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
@@ -68,7 +68,7 @@ Some results:
 
 ## 4. Result
 
-- The training process in Kaggle with 150 epochs,results are decribed below: 
+- The training process on Kaggle with 150 epochs,results are decribed below: 
 
 ![loss](data/img/lossresult.png)
 
