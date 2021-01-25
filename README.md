@@ -30,7 +30,7 @@ Some results:
 
 ## 2. Preprocessing.
 - Keep brain images is RGB because I think with 3 channels R-G-B, information about tumors is different from the rest. About mask images is gray.
-- Bring image's pixel to between 0 and 1 and mask's pixel are 0 or 1 (0 when pixel / 255 < 0.5, 1 when pixel / 255 >= 0.5).
+- Bring image's pixel to between 0 and 1 and mask's pixel are 0 or 1 (0 when pixel is background, 1 when pixel is tumor).
 - Split data into 3 part: Train, Validation and Test:
     + Train: 2828 images, masks (71.98%)
     + Validation: 708 images, masks (18.02%)
