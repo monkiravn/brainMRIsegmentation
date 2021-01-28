@@ -2,6 +2,7 @@
 
 This is my first project about segmentation. The gobal of this  project is 
 segmenting tumors on Brain image. Currently, it achieves 0.86 IoU. 
+My project on Kaggle: https://www.kaggle.com/monkira/brain-mri-segmentation-using-unet-keras
 
 The architecture is inspired by [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 
